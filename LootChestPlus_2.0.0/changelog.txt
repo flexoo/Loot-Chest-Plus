@@ -2,7 +2,8 @@
 Version: 2.0.0
 Date: 2024.10.21
   Changes:
-    - Updated to 2.0
+    - Changed global to storage
+    - Edited recipe to new format
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.9
 Date: 2023.04.09
