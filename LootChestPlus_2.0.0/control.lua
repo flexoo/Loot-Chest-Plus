@@ -143,7 +143,7 @@ function handleBuiltLootChest(event)
 		storage.lootChest = chest   --this is now the force's chest. 
 	else
 		game.players[1].print("You can place only one loot chest!")
-		chest.surface.spill_item_stack(chest.position, {type = "item", name = "artifact-loot-chest", amount = 1}, true, chest.force)
+		chest.surface.spill_item_stack{position=chest.position, stack={name = "artifact-loot-chest", amount = 1}, true, chest.force}
 		chest.destroy()
 	end
 end
