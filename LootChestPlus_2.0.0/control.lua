@@ -37,8 +37,8 @@ script.on_event(defines.events.on_entity_died, function(event)
                 entityLoot = event.loot.get_contents() -- gives LuaInventory
                 lootCount = 0
                 for key,value in pairs(entityLoot) do
-                        lootCount = entityLoot[key]
-                        itemName = key
+                        lootCount = value.count
+                        itemName = value.name
                         --if lootCount and lootCount > 0 then
 						if #lootCount > 0 then
                                 foundLoot = true
