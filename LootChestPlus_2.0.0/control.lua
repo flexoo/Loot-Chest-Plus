@@ -40,7 +40,7 @@ script.on_event(defines.events.on_entity_died, function(event)
                         lootCount = value.count
                         itemName = value.name
                         --if lootCount and lootCount > 0 then
-						if #lootCount > 0 then
+						if lootCount > 0 then
                                 foundLoot = true
                                 if not storage.artifactList[itemName] then
                                         storage.artifactList[itemName] = 0
